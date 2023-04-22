@@ -1,0 +1,441 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> TNSTC</title>
+    <link rel="icon" href="./tn gov.jpg">
+    <link rel="stylesheet" href="./setc.css">
+    <style>
+        .aa img {
+            padding-left: 30px;
+            border-radius: 20px;
+            margin-top: 8px;
+            align-items: center;
+
+        }
+
+        .aa {
+            font-size: 14px;
+            background-color: lightgray;
+
+
+
+        }
+
+        .aa span {
+            text-align: center;
+        }
+
+        .aaa {
+            text-align: center;
+            margin-top: 30px;
+        }
+
+        .bbb h3 {
+            text-align: center;
+            font-size: 15px;
+            margin-top: 0px;
+        }
+
+        .bbb h4 {
+            text-align: center;
+            color: red;
+            margin-top: 0px;
+            padding-top: 0px;
+        }
+
+        .bbb h5 {
+            text-align: center;
+            margin-top: 0px;
+            text-transform: capitalize;
+        }
+
+        .bbb img {
+            padding-left: 10px;
+        }
+
+        .bbb {
+            display: inline;
+        }
+
+        .cc ul li {
+            display: inline-flex;
+            text-decoration: dashed;
+            text-transform: capitalize;
+            color: white;
+        }
+
+        .cc {
+            background-color: brown;
+            background-size: 30px;
+        }
+
+        .cc span {
+            padding-left: 30px;
+            font-size: 18px;
+        }
+
+        span h1 {
+            background-color: brown;
+        }
+
+        .jor {
+            font-family: 'Poppins', sans-serif;
+        }
+
+        .ser {
+            padding-left: 280px;
+            color: blue;
+
+        }
+
+        .des h2 {
+            color: blue;
+            font-size: 19px;
+            padding-left: 30px;
+        }
+
+        .dd {
+            padding-left: 30px;
+
+        }
+
+        .ddd h1,
+        form {
+            padding-left: 30px;
+
+
+
+        }
+
+        form legend {
+            text-align: center;
+            font-size: 30px;
+            text-transform: capitalize;
+            background-color: brown;
+            color: white;
+            border-radius: 10px;
+        }
+
+        .des ul li {
+            display: inline-flex;
+            padding-left: 80px;
+            font-size: 20px;
+        }
+
+        .des2 ul li {
+            display: inline-flex;
+            padding-left: 95px;
+            font-size: 20px;
+        }
+
+        .des3 ul li {
+            display: inline-flex;
+            padding-left: 55px;
+            font-size: 20px;
+        }
+
+        .des4 ul li {
+            display: inline-flex;
+            padding-left: 55px;
+            font-size: 20px;
+
+
+        }
+
+        .mad {
+            text-align: center;
+            /* background-image: url("data:image/jpeg;base64,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"); */
+            opacity: .7;
+            background-repeat: no-repeat;
+            background-color: lightblue;
+          
+
+
+        }
+
+        .dee li a {
+            color: blue;
+            font-weight: bold;
+        }
+
+        .top h2 {
+            color: blue;
+            padding-left: 20px;
+            padding-top: 25px;
+        }
+
+        .den {
+            padding-left: 20px;
+            color: blue;
+        }
+
+        .che img {
+            padding-left: 40px;
+        }
+
+        .che2 ul li {
+            display: inline-flex;
+            color: blue;
+            font-size: 20px;
+            padding-left: 120px;
+        }
+
+        .marg {
+            float: right;
+            padding-right: 2px;
+        }
+
+        .se44 {
+            float: left;
+            padding-left: 2px;
+        }
+
+        .ta {
+            background-color: brown;
+            padding-left: 20px;
+            color: white;
+            padding-bottom: 20px;
+            padding-top: 15px;
+
+
+        }
+
+        .ta table td {
+            padding-left: 70px;
+        }
+
+        .la {
+            background-color: black;
+            color: white;
+            padding-top: 30px;
+        }
+
+        .la img {
+            border-radius: 15px;
+            margin-left: 30px;
+        }
+
+        .la h5 {
+            padding-left: 10px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="aa">
+        <img src="./phone imge.png" alt="" height="20px" width="20px "> Online Reservation Toll Free Number: 08066006572
+        / 9513948001
+        <img src="./phone imge.png" alt="" height="20px" width="20px">Bank Queries-Billdesk / Helpdesk: 044-49076316 /
+        49076326
+        <img src="./download (1).png" alt="" height="35px" width="100px">
+        <img src="./download (2).jpg" alt="" height="35px" width="100px"> <span> ENGLISH/TAMIL </span>
+    </div>
+    <div class="aaa">
+        <span class="se44">
+            <img style="margin-right: 0px;" src="./setc44.jpg" alt="" height="120px" width="190px">
+        </span>
+        <img src="./tn gov.jpg" alt="" height="90px" width="90px">
+        <span class="marg">
+            <img style="margin-right: 0px;" src="./setc33.jpg" alt="" height="120px" width="190px">
+        </span>
+
+    </div>
+    <div class="bbb">
+        <nav>
+
+
+            <h3>தமிழ்நாடு அரசு போக்குவரத்துக் கழகம்</h3>
+            <h4>Tamil Nadu State Transport Corporation </h4>
+            <h5>(a government of tamilnadu undertaking)</h5>
+        </nav>
+    </div>
+    <div class="cc">
+        <ul>
+            <li>home|</li>
+            <li>about us|</li>
+            <li>types of services|</li>
+            <li>terms & conditions|</li>
+            <li>hire a bus|</li>
+            <li>gallery|</li>
+            <li>contact us|</li>
+            <span>
+                <li>cancel ticket|</li>
+                <li>view ticket|</li>
+                <li>ticket status|</li>
+                <li>refund|</li>
+                <li>transection status</li>
+
+            </span>
+            <span>
+                <li>operater login</li>
+            </span>
+
+        </ul>
+    </div>
+    <div class="dd">
+        <h4>"Online Reservation Toll Free Number: 08066006572 / 9513948001."
+        </h4>
+    </div>
+
+    <div class="container">
+        <div class="row">
+            <div class="col-6">
+                <form>
+                    <fieldset>
+                        <legend>search and book tickes</legend>
+                        <label for="">From: <img src="./icon2.jpg" alt="" height="15px" width="15px"> </label>
+                        <input type="text"><br><br>
+                        <hr>
+                        <label for="" style="padding: 20px;">To:<img src="./icon2.jpg" alt="" height="15px"
+                                width="15px"> </label>
+                        <input type="text"><br><br>
+                        <hr>
+                        <label for="">Onward journy date:</label>
+                        <input type="date">
+                        <label for="">TIME</label>
+                        <select>
+
+
+                            <option value="">ANY</option>
+                            <option value="">BEFORE 12PM</option>
+                            <option value="">12PM-08PM</option>
+                            <option value="">08PM-12AM</option>
+                        </select><br><br>
+                        <hr>
+
+                        <div class="jor">
+                            <label for=""> Return journy date:</label>
+                            <input type="date">
+                            <label for="">TIME</label>
+                            <select>
+
+                                <option value="">ANY</option>
+                                <option value="">BEFORE 12PM</option>
+                                <option value="">12PM-08PM</option>
+                                <option value="">08PM-12AM</option>
+                                <hr>
+
+                            </select><br><br>
+                            <div class="ser">
+                                <button style="color: blue;">SEARCH</button>
+                    </fieldset>
+            </div>
+            <div class="col-6">
+                <img src="https://www.tnstc.in/images/slider/tn_slider01.jpg" alt="">
+            </div>
+        </div>
+
+        </form>
+        </table>
+        <hr>
+
+    </div>
+    <div class="mad">
+
+        <div class="container">
+            <div class="row">
+                <div class="col-3">
+                    <ul>
+                        <li>Chennai - Madurai</li>
+                        <li>Chennai - Trichy</li>
+                        <li>Chennai - coimbatore </li>
+                        <li>Chennai - Salem</li>
+                        <li>Chennai - Theni</li>
+                        <li>Chennai - Kumbakonam</li>
+                        <li>Chennai - Bangalore</li>
+                        <li>Chennai - Theni</li>
+                        <li>Chennai - Karur </li>
+                        <li>Chennai - Kanyakumari</li>
+                        <li>Chennai - Nagercoil</li>
+                    </ul>
+                </div>
+                <div class="col-3">
+                    <ul>
+                        <li>Chennai - Erode</li>
+                        <li>Chennai - Mysore</li>
+                        <li>Chennai - Ooty</li>
+                        <li>Chennai - Rameswaram</li>
+                        <li>Chennai - Tiruchendore</li>
+                        <li>Chennai - Kodaikanal</li>
+                        <li>Chennai - Tirunelvelli</li>
+                        <li>Coimbatore - Bangalore</li>
+                        <li>Coimbatore - Chennai</li>
+                        <li>Bengalore -Salem</li>
+                        <li>Trichy -Bangalore</li>
+
+                    </ul>
+                </div>
+                <div class="col-3">
+                    <ul>
+                        <li>Madurai - Bangalore</li>
+                        <li>Chennai - Tirupati</li>
+                        <li>Bangalore - Karur</li>
+                        <li>Bangalore - Kochin</li>
+                        <li>Chennai - kochin</li>
+                        <li>Erode - Chennai</li>
+                        <li>Erode - Bangalore</li>
+                        <li>Dindugal - Chennai</li>
+                        <li>Karaikudi - Chennai</li>
+                        <li>Karur - Chennai</li>
+                        <li>Chennai - Tiruvanandapuram</li>
+                    </ul>
+                </div>
+                <div class="col-3">
+                    <li>Tirupati - Trichy</li>
+                    <li>Tirupati - Karur</li>
+                    <li>Tirupati - Salem</li>
+                    <li>Tirupur - bangalore</li>
+                    <li>Namakkal - Chennai</li>
+                    <li>Vellore - Madurai</li>
+                    <li>Madurai - Coimbatore</li>
+                    <li>Theni - Kochin</li>
+                    <li>Mysore - Kannyakumari</li>
+                    <li>Kumbakonam - Mysore</li>
+                    <li>Tenkasi - Vellore</li>
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="ta mt-5">
+        <table>
+            <tr>
+                <td>Information</td>
+                <td>special services</td>
+                <td>Compatable Browsers</td>
+                <td>Privacy Policy</td>
+                <td>User Manual</td>
+                <td>Number Of Hints:217,760,903</td>
+            </tr>
+            <tr>
+                <td>Rules & Regulations</td>
+                <td>Counter Address</td>
+                <td>Browser Settings</td>
+                <td>Feedback</td>
+            </tr>
+            <tr>
+                <td>Reservation Center</td>
+                <td>Suggestions</td>
+                <td>FAQs</td>
+                <td>Site Map</td>
+            </tr>
+        </table>
+
+    </div>
+    <div class="la">
+        © TNSTC. All Rights Reserved. Ver-09092022-1135
+
+        <h5>Follow us On: </h5><a href=""><img src="./wahtsapp.jpg" alt="" height="30px" width="30px"></a>
+        <a href=""><img src="./face.jpg" alt="" height="30px" width="30px"></a>
+        <a href=""> <img src="./insta.jpg" alt="" height="30px"
+                width="30px"></a>
+
+    </div>
+</body>
+
+</html>
